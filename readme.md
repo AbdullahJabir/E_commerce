@@ -1,4 +1,26 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+/**Ecommerce Site**/
+Admin Panel:
+register,
+Login
+Add Slider
+Slider view (pulication status)
+Category,Manufacture,Product add,view,update,delete with publication status
+
+Front Side:
+show slider
+show Category and manufacture by left side.
+show all product
+search by product,manufacture
+Add chard
+checkbox
+update item
+user log in...
+etc...........
+
+
+
+
+<!-- <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -63,3 +85,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ -->

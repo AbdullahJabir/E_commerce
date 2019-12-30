@@ -15,7 +15,8 @@
                                             <div class="overlay-content">
                                                 <h2>{{$row->product_price}} Tk</h2>
                                                 <p>{{$row->product_name}}</p>
-                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                                <!-- <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a> -->
+                                                <a href="{{URL::to('/view_product/'.$row->product_id)}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                             </div>
                                         </div>
                                 </div>

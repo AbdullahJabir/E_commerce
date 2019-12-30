@@ -38,9 +38,6 @@ Route::post('/order_place','CheckoutController@order_place');
 
 
 
-
-
-
 //BackEnd
 Route::get('/logout','SuperAdminController@logout');
 Route::get('/admin','AdminController@index');

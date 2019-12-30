@@ -28,6 +28,7 @@
 						<table class="table table-striped table-bordered bootstrap-datatable datatable">
 						  <thead>
 							  <tr>
+							  	<th>Serial No</th>
 								  <th>Slider Id</th>
 								  
 								  <th>Slider Image</th>
@@ -42,10 +43,13 @@
 					  	@foreach($all_slider as $row)
 					  	
 						<tr>
+							<td class="center">{{ $loop->index+1}}</td>
 							<td class="center">{{ $row->slider_id }}</td>
+
 							
-								
-                                <td><img src="{{URL::to($row->slider_image)}}" style="height: 80px;width: 180px;"></td>
+								<!-- <td><img class="img-responsive img-thumbnail" src="{{ asset('/slider/'.$row->slider_image) }}" style="height: 120px; width: 200px"></td> -->
+								<td><img class="img-responsive img-thumbnail" src="{{URL::to($row->slider_image)}}" style="height: 80px;width: 80px;width: 180px;"></td>
+                                <!-- <td><img src="{{asset('public/slider/'.$row->slider_image)}}" style="height: 80px;width: 180px;"></td> -->
                                
 
 									<td class="center">

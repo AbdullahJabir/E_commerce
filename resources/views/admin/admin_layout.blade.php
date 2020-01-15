@@ -355,6 +355,14 @@
 								
 							</ul>	
 						</li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Worker </span><span class="label label-important"> NEW </span></a>
+							<ul>
+								<li><a class="submenu" href="{{url('/all_worker')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> All Worker </span></a></li>
+								<li><a class="submenu" href="{{url('/add_worker')}}"><i class="icon-file-alt"></i><span class="hidden-tablet"> Add Worker </span></a></li>
+								
+							</ul>	
+						</li>
 
 						<li>
 							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Slider </a>

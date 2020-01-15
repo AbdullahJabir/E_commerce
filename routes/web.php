@@ -81,3 +81,10 @@ Route::get('/all-slider','SliderController@all_slider')->name('all_slider');
 Route::get('/unactive_slider/{slider_id}','SliderController@unactive_slider');
 Route::get('/active_slider/{slider_id}','SliderController@active_slider');
 Route::get('/delete_slider/{slider_id}','SliderController@delete_slider');
+//worker
+Route::get('/add_worker','WorkerController@index');
+Route::post('/save-worker','WorkerController@save_worker');
+Route::get('/all_worker','WorkerController@all_worker')->name('all_worker');
+
+Route::get('/unactive_worker/{id}','WorkerController@unactive_worker');
+Route::get('/active_worker/{id}','WorkerController@active_worker');

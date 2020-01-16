@@ -278,11 +278,11 @@
                         
                         <?php }?> 
                         
-                       
+                    
                         
                         
                         </div>
-                   
+
                     <div class="col-sm-3">
                         <div class="address">
                             <img src="{{URL::to('frontEnd/images/home/map.png')}}" alt="" />

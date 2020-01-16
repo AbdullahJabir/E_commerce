@@ -71,13 +71,15 @@
 
 							<div class="input-prepend" title="Password">
 								<span class="add-on"><i class="halflings-icon lock"></i></span>
+
 								<input class="input-large span10" name="admin_password" id="password" type="password" placeholder="type password"/>
 							</div>
 							
 							
 							
 
-							<div class="button-login">	
+							<div class="button-login">
+							<button type="button" class="btn btn-primary" id="show_password">Show password</button>	
 								<button type="submit" class="btn btn-primary">Login</button>
 							</div>
 							<div class="clearfix"></div>
@@ -129,6 +131,35 @@
 		<script src="{{asset('backEnd')}}/js/jquery.gritter.min.js"></script>
 		
 		<script src="{{asset('backEnd')}}/js/custom.js"></script>
+
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+		<script >
+			<!-- password show and hide -->
+			$(document).ready(function(){  
+				 $('#show_password').on('click', function(){  
+				  var passwordField = $('#password');  
+				  var passwordFieldType = passwordField.attr('type');
+				  if(passwordField.val() != '')
+				  {
+				   if(passwordFieldType == 'password')  
+				   {  
+				    passwordField.attr('type', 'text');  
+				    $(this).text('Hide Password');  
+				   }  
+				   else  
+				   {  
+				    passwordField.attr('type', 'password');  
+				    $(this).text('Show Password');  
+				   }
+				  }
+				  else
+				  {
+				   alert("Please Enter Password");
+				  }
+				 });  
+				}); 
+		</script>
+		<!-- end password show and hide -->
 	<!-- end: JavaScript-->
 	
 </body>
